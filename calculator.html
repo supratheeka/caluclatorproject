@@ -1,52 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator project</title>
-    <link rel="stylesheet" href="calculator.css">
+  <meta charset="UTF-8" />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="calculator.css" />
 </head>
 <body>
-    <div class="Calculator">
-        <input type="text" placeholder="0">
-        <div>
-            <button>AC</button>
-            <button>DEL</button>
-            <button>%</button>
-            <button>/</button>
-        </div>
-        <div>
-            <button class="operator">AC</button>
-            <button class="operator">DEL</button>
-            <button class="operator">%</button>
-            <button class="operator">/</button>
-        </div>
-        <div>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button class="operator">*</button>
-        </div>
-        <div>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button class="operator">-</button>
-        </div>
-        <div>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button class="operator">+</button>
-        </div>
-        <div>
-            <button>00</button>
-            <button>0</button>
-            <button>.</button>
-            <button class ="equalBtn">=</button>
-        </div>
+  <div class="calc">
+    <input id="inputBox" type="text" readonly />
+    <div class="keys">
+      <button type="button" data-val="AC">AC</button>
+      <button type="button" data-val="C">C</button>
+      <button type="button" data-val="/">/</button>
+      <button type="button" data-val="*">*</button>
+
+      <button type="button" data-val="7">7</button>
+      <button type="button" data-val="8">8</button>
+      <button type="button" data-val="9">9</button>
+      <button type="button" data-val="-">-</button>
+
+      <button type="button" data-val="4">4</button>
+      <button type="button" data-val="5">5</button>
+      <button type="button" data-val="6">6</button>
+      <button type="button" data-val="+">+</button>
+
+      <button type="button" data-val="1">1</button>
+      <button type="button" data-val="2">2</button>
+      <button type="button" data-val="3">3</button>
+      <button type="button" data-val="=">=</button>
+
+      <button type="button" data-val="0">0</button>
+      <button type="button" data-val=".">.</button>
     </div>
-    <script src="calculator.js"></script>
-    
+  </div>
+
+  <script src="calculator.js" defer></script>
 </body>
 </html>
